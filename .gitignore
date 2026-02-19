@@ -1,0 +1,164 @@
+# .gitignore - Agent IA CLI
+# Fichiers et dossiers à ignorer lors du commit Git
+
+# ========== VARIABLES D'ENVIRONNEMENT ==========
+# IMPORTANT: Ne JAMAIS committer les clés API!
+.env
+.env.local
+.env.*.local
+.env.production
+
+# ========== PYTHON ==========
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+.env.venv
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Autres IDEs
+.sublime-project
+.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ========== TESTS & COVERAGE ==========
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+pytest.ini
+coverage.xml
+.hypothesis/
+
+# ========== LOGGING ==========
+*.log
+logs/
+.agent.log
+*.log.*
+
+# ========== FILES TEMPORAIRES ==========
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+~*
+
+# ========== OS SPÉCIFIQUES ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+
+# ========== PROJET SPÉCIFIQUE ==========
+# Fichiers de démo temporaires
+demo_phase2.txt
+test.txt
+test-input.txt
+final_test.txt
+*.tmp.txt
+
+# Historique local
+.agent_history.json
+/tmp/
+/temp/
+
+# Fichiers de déploiement
+*.pem
+*.key
+*.crt
+*.pub
+
+# Configuration locale
+local_config.json
+dev_settings.py
+
+# ========== FICHIERS GÉNÉRÉS ==========
+requirements_generated.txt
+.python-version
+COVERAGE.xml
+
+# ========== DOCKER ==========
+.dockerignore
+docker-compose.override.yml
+
+# ========== GIT ==========
+.git/
+.gitignore  # Ne pas tracker les modifications de .gitignore
+
+# ========== AUTRES ==========
+*.zip
+*.tar.gz
+*.rar
+node_modules/
+package-lock.json
+poetry.lock
+Pipfile.lock
+
+# ========== VSCODE SPÉCIFIQUE ==========
+.vscode/*.json
+!.vscode/launch.json
+!.vscode/settings.json.template
+
+# ========== INTELLIJ SPÉCIFIQUE ==========
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ========== MACOS SPECIFIC ==========
+.gitkeep
+
+# ========== FICHIERS SENSIBLES ==========
+*.secret
+*.credentials
+secret*.py
+credentials.json
+auth.token
+
+# Ne pas ignorer
+!.gitkeep
+!.env.example
+!requirements.txt
+!Makefile
+!
